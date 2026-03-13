@@ -15,7 +15,7 @@ export async function chat(messages: Message[], tools?: object[]): Promise<Messa
     const res = await fetch(`${OLLAMA_URL}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        signal: AbortSignal.timeout(60_000),
+        signal: AbortSignal.timeout(300_000),
         body: JSON.stringify({
             model: MODEL,
             messages,
