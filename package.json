@@ -4,9 +4,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "bun --watch src/index.ts",
-    "start": "bun src/index.ts",
-    "cli": "bun src/cli.ts"
+    "dev": "bun --watch src/telegram.ts",
+    "start": "bun src/telegram.ts",
+    "cli": "bun src/interface/cli.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"

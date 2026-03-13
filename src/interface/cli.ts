@@ -1,5 +1,5 @@
-import { handleChat, clearHistory } from './chat';
-import { markdownToAnsi } from './service/format';
+import { handleChat, clearHistory } from '../brain';
+import { markdownToAnsi } from '../lib/format';
 
 const prompt = '\x1b[36myou>\x1b[0m ';
 

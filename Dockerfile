@@ -7,4 +7,4 @@ RUN bun install
 
 COPY src ./src
 
-CMD ["bun", "src/index.ts"]
+CMD ["bun", "src/telegram.ts"]

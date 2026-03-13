@@ -56,7 +56,7 @@ export async function sendThinking(): Promise<number> {
 }
 
 export async function editWithResponse(messageId: number, markdown: string) {
-  const { markdownToHtml } = await import("./format");
+  const { markdownToHtml } = await import("../lib/format");
   const html = markdownToHtml(markdown);
 
   const data = await tg("editMessageText", {
