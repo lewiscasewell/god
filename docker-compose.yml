@@ -8,15 +8,14 @@ services:
 
   app:
     build: .
+    network_mode: host
     depends_on:
       - redis
     env_file:
       - .env
     environment:
-      - REDIS_URL=redis://redis:6379
-      - OLLAMA_URL=http://host.docker.internal:11434
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
+      - REDIS_URL=redis://localhost:6380
+      - OLLAMA_URL=http://localhost:11434
 
 volumes:
   redis-data:
