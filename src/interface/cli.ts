@@ -3,7 +3,6 @@ import { markdownToAnsi } from '../lib/format';
 
 const prompt = '\x1b[36myou>\x1b[0m ';
 
-console.log('\x1b[1mgod\x1b[0m — a 3B parameter deity');
 console.log('Type "clear" to reset conversation, ctrl+c to exit.\n');
 
 process.stdout.write(prompt);
